@@ -5,7 +5,7 @@ def CREER_LISTE_VIDE():
 
     return liste
 
-def INSERER(L, element, index):
+def INSERER(L, element, i):
 
     if ((L[0] == len(L)) or (i-1>L[0])):
         print("La liste est déjà pleine ou alors le rang n'est pas correct.")
@@ -13,7 +13,7 @@ def INSERER(L, element, index):
         return False
     
     else:
-        for k in range (L[0]+1, index, -1):
+        for k in range (L[0]+1, i, -1):
             L[k] = L[k-1]
         L[i] = element
         L[0] = L[0]+1
@@ -34,7 +34,7 @@ def SUPPRIMER(L, i):
 
         return False
     
-def MODIFIER(l, i, element):
+def MODIFIER(L, i, element):
 
     if i == 0 or i > L[0]:
         print("La liste ne possède pas d'élément d'indice" ,i + ".")
