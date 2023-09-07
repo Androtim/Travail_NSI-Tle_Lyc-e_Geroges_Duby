@@ -83,7 +83,7 @@ def AFFICHER(L):
     else:
         affichage = ""
         for k in range (1, len(L)):
-            affichage += " " + str(k)
+            affichage += str(L[k]) + ", "
 
-        print("Voici la liste d'éléments utilisés :" + affichage)
+        print("Voici la liste d'éléments utilisés :" , affichage)
         return True
