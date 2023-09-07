@@ -86,4 +86,4 @@ def AFFICHER(L):
             affichage += str(k) + ", "
 
         print("Voici la liste d'éléments utilisés :" , affichage)
-        return
+        return True
