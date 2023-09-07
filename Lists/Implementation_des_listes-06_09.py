@@ -59,18 +59,23 @@ def RECHERCHER(L, element):
             if L[k] == element:
                 position += [k]
             elif len(position) > 0:
+                
                 return position
+                
             else:
+                
                 return False
             
 def LIRE(L, i):
 
     if i == 0 or i > L[0]:
         print("La liste ne possède pas d'élément d'indice" ,i + ".")
+        
         return False
     
     else:
         print("L'élément d'indice",i,"est :", L[i])
+        
         return True
 
 def AFFICHER(L):
@@ -86,4 +91,5 @@ def AFFICHER(L):
             affichage += str(L[k]) + ", "
 
         print("Voici la liste d'éléments utilisés :" , affichage)
+        
         return True
