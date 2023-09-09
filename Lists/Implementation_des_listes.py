@@ -156,6 +156,3 @@ def UTILISER():
     on doit avoir 
     [7,11,8,4,5]
     """
-
-
-UTILISER()
