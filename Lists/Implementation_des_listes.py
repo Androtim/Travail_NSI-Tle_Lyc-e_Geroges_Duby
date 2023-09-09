@@ -100,6 +100,8 @@ def INVERSER(L):
     if L[0] == 0:
         print("La liste est vide, impossible d'inverser")
 
+        return L, False
+
     else:
         L2 = []
         if L[0] > 0:
@@ -112,17 +114,48 @@ def INVERSER(L):
 
     return L2, True
 
+def INVERSE(L):
+    if len(L) == 0:
+        print("La liste est vide, impossible d'inverser")
+
+        return False
+    
+    else:
+        L2 = []
+        dernier_nombre = len(L) - 1
+        while dernier_nombre >= 0:
+            L2.append(L[dernier_nombre])
+            dernier_nombre -= 1
+
+        return L2
+
+
 
 #def Utiliser_les_fonctions():
 #    Personne = True
 #    while Personne == True:
 
+#def UTILISER():
+#    liste1 = CREER_LISTE_VIDE()
+#    INSERER(liste1, 2, 1)
+#    INSERER(liste1, 5, 1)
+#    INSERER(liste1, 3, 1)
+#    INSERER(liste1, 7, 1)
+#    AFFICHER(liste1)
+#    liste1, resultat = INVERSER(liste1)
+#    AFFICHER(liste1)
+#    print(liste1)
+
+
 def UTILISER():
-    liste1 = CREER_LISTE_VIDE()
-    INSERER(liste1, 2, 1)
-    INSERER(liste1, 5, 1)
-    INSERER(liste1, 3, 1)
-    AFFICHER(liste1)
-    liste1, resultat = INVERSER(liste1)
-    AFFICHER(liste1)
-    print(liste1)
+    L1=[5,4,8,11,7]
+    L2=INVERSE(L1)
+    print(L1)
+    print(L2)
+    """
+    on doit avoir 
+    [7,11,8,4,5]
+    """
+
+
+UTILISER()
