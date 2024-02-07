@@ -7,7 +7,6 @@ def CREER_LISTE_VIDE():
     return liste
 
 def INSERER(L, element, i):
-
     if ((L[0] == len(L)) or (i-1>L[0])):
         print("La liste est déjà pleine ou alors le rang n'est pas correct.")
 
@@ -22,12 +21,10 @@ def INSERER(L, element, i):
         return True
 
 def SUPPRIMER(L, i):
-
     if ((L[0] != 0) and i <= L[0]):
         for k in range (i, L[0], 1):
             L[k] = L[k+1]
         L[0] = L[0] -1
-
         return True
 
     else:
@@ -115,6 +112,7 @@ def INVERSER(L):
     return L2, True
 
 def INVERSE(L):
+
     if len(L) == 0:
         print("La liste est vide, impossible d'inverser")
 
@@ -128,8 +126,6 @@ def INVERSE(L):
             dernier_nombre -= 1
 
         return L2
-
-
 
 #def Utiliser_les_fonctions():
 #    Personne = True
