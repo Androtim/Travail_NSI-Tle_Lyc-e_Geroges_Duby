@@ -22,15 +22,12 @@ while continuer :
     for event in pygame.event.get():
         if event.type == QUIT:
             continuer = False
-    if event.type == MOUSEBUTTONDOWN and event.button == 1:
-        fenetre.blit(eau, (320, 260))
-    if event.type == MOUSEBUTTONDOWN and event.button == 3:
-        fenetre.blit(terre, (400, 260))
+        if event.type == MOUSEBUTTONDOWN and event.button == 1:
+            fenetre.blit(eau, (320, 260))
+        if event.type == MOUSEBUTTONDOWN and event.button == 3:
+            fenetre.blit(terre, (400, 260))
 
         if event.type == KEYDOWN and event.key == K_SPACE:
         	print("Espace")
 
 pygame.quit()
-
-
-
